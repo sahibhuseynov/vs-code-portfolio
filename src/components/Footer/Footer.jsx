@@ -4,7 +4,8 @@ import SourceControlIcon from "../../assets/source-control-icon.svg";
 import CheckIcon from "../../assets/check-icon.svg";
 import { MdOutlineCancel } from "react-icons/md";
 import { AiOutlineWarning } from "react-icons/ai";
-import {GrNotification} from "react-icons/gr";
+import {RiNotification4Line} from "react-icons/ri";
+import {CgMediaLive} from "react-icons/cg";
 const Footer = () => {
   return (
     <footer>
@@ -20,14 +21,18 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__right">
+      <div className="foot__item">
+          <CgMediaLive  />
+          Go Live
+        </div>
         <div className="foot__item">
           <img src={CheckIcon} alt="" />
           Prettier
         </div>
         <div className="foot__item">
-          <GrNotification size={15}/>
-          
+          <RiNotification4Line size={15}  />
         </div>
+        
       </div>
     </footer>
   );

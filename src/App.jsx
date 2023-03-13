@@ -14,9 +14,9 @@ const Layout = () => {
         <div className="main__content">
             <Sidebar />
             <Explorer />
-            <div>
+            <div className="page__control">
                 <Tabs />
-                <Outlet />
+                <Outlet  />
             </div>
         </div>
         <Footer />

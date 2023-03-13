@@ -1,9 +1,9 @@
 @import '../../sass/index.scss';
 
 footer{
-    background-color: aqua;
+    background-color: #24292e;
     height: 30px;
-    
+    padding:0 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,17 +19,19 @@ footer{
     .footer__left{
         display: flex;
         gap: 12px;
+        height: 100%;
        
     }
     .footer__right{
         display: flex;
         gap: 12px;
+        height: 100%;
     }
     .foot__item{
         display: flex;
         align-items: center;
-        gap: 3px;
-        padding: 8px;
+        gap: 5px;
+        padding: 0 4px;
         cursor: pointer;
 
         &:hover{

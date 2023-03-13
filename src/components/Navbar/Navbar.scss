@@ -1,13 +1,14 @@
 @import '../../sass/index.scss';
 
 .navbar{
-    background-color: aqua;
+    background-color: #1f2428;
     height: 30px;
-    padding:0 8px;
+    padding:0 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 13px;
+    border: 1px solid #191d20;
     .nav__left{
         display: flex;
         align-items: center;
