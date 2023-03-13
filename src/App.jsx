@@ -1,12 +1,44 @@
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import Explorer from './components/Explorer/Explorer';
+import Footer from './components/Navbar/Footer/Footer';
+import Tabs from "./components/Tabs/Tabs";
+import Home from './pages/Home';
 
 
-function App() {
-
+const Layout = () => {
   return (
-    <div className="app">
-      hello
-    </div>
+    <>
+        <Navbar />
+        <div>
+            <Sidebar />
+            <Explorer />
+            <div>
+                <Tabs />
+                <Outlet />
+            </div>
+        </div>
+        <Footer />
+    </>
   )
 }
 
-export default App
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Home/> },
+      { path: "/about", element: <div>About</div> },
+    ]
+  }
+]);
+ 
+
+
+function App() {
+  return <RouterProvider router={router} />
+}
+
+export default App;
