@@ -2,7 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Explorer from './components/Explorer/Explorer';
-import Footer from './components/Navbar/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import Tabs from "./components/Tabs/Tabs";
 import Home from './pages/Home';
 
@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <>
         <Navbar />
-        <div>
+        <div className="main__content">
             <Sidebar />
             <Explorer />
             <div>
