@@ -16,7 +16,9 @@ const Layout = () => {
             <Explorer />
             <div className="page__control">
                 <Tabs />
-                <Outlet  />
+                <div className="outlet">
+                <Outlet/>
+                </div>
             </div>
         </div>
         <Footer />

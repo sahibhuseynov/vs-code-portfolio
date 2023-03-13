@@ -19,7 +19,14 @@ body{
 }
 .page__control{
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #2e2e2e;
+}
+.outlet{
+  height: 100%;
+  padding: 2rem;
+  overflow-x: hidden;
 }
 .link{
   text-decoration: none;
