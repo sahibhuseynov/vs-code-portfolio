@@ -8,9 +8,9 @@ const Home = () => {
     <div className='home'>
       <div className="home__title">
         <motion.h1
-        initial={{ x: -700}}
+        initial={{ x: -200}}
         animate={{ x: 0}}
-        transition={{ duration: 0.5, type: 'spring', stiffness: 90 }}
+        transition={{ duration: 0.5, type:'spring', stiffness: 50, }}
         >Sahib Huseynov</motion.h1>
         <TypeAnimation
     sequence={['Frontend Web Developer.', ]}
