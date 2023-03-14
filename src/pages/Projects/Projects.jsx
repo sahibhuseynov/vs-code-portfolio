@@ -19,7 +19,8 @@ const Projects = () => {
                             <h4>{project.name}</h4>
                             <p>{project.description}</p>
                             <div className="project__card__footer">
-                                <a href={project.link} target="_blank" rel="noreferrer">View Project</a>
+                                <a href={project.link} target="_blank" rel="noreferrer">Live Demo</a>
+                                <a href={project.github} target="_blank" rel="noreferrer">Soruce Code</a>
                             </div>
                         </div>
                     </div>

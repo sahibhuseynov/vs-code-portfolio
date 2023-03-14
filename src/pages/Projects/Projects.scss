@@ -2,6 +2,9 @@
 
 .projects{
 
+    h3{
+        margin-bottom: 30px;
+    }
     .projects__container{
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));

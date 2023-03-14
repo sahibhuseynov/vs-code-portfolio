@@ -27,7 +27,7 @@
         font-size: 17px;
         border-radius: 4px;
         color: white;
-        border: 3px solid rgb(252, 70, 100);
+        width: 130px;
         cursor: pointer;
         position: relative;
         background-color: transparent;
@@ -52,6 +52,7 @@
         }
       }
       .btn2 {
+        height: 100%;
         display: inline-block;
         border-radius: 4px;
         background-color: #3d405b;

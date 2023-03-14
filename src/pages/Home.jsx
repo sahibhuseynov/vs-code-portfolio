@@ -18,7 +18,7 @@ const Home = () => {
     wrapper="h3"
   />
   <div className='home__btn__group'>
-    <button className='btn2'><span>View Work</span></button>
+    <Link to='/projects'><button className='btn2'><span>View Work</span></button></Link>
    <Link to='/contact'> <button className='btn'>Contact Me</button></Link>
   </div>
       </div>
