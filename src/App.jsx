@@ -5,6 +5,8 @@ import Explorer from './components/Explorer/Explorer';
 import Footer from './components/Footer/Footer';
 import Tabs from "./components/Tabs/Tabs";
 import Home from './pages/Home';
+import About from "./pages/About/About";
+import Contact from './pages/Contact/Contact';
 
 
 const Layout = () => {
@@ -32,7 +34,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home/> },
-      { path: "/about", element: <div>About</div> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
     ]
   }
 ]);

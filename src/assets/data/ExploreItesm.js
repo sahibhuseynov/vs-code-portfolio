@@ -19,6 +19,7 @@ const explorerItems = [
       path: '/about',
       icon: htmlicon,
     },
+    
     {
       name: 'contact.scss',
       path: '/contact',
