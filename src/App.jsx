@@ -7,6 +7,7 @@ import Tabs from "./components/Tabs/Tabs";
 import Home from './pages/Home';
 import About from "./pages/About/About";
 import Contact from './pages/Contact/Contact';
+import Projects from './pages/Projects/Projects';
 
 
 const Layout = () => {
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home/> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/projects", element: <Projects /> },
     ]
   }
 ]);
