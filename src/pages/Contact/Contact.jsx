@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className='contact'>
        <div className='contact__left'>
-        <h3>Reach Out Via Socials</h3>
+        <h3>Contact Me on Social Media</h3>
             <p><span>1</span> .socials &#123;</p> 
            <ul className='social__links'>
                 <li><span>2</span> website: <Link className='contact__link' >Heyy</Link></li>
@@ -19,7 +19,7 @@ const Contact = () => {
        </div>
 
        <div className="contact__right">
-        <h3>Or Fill Out This Form</h3>
+        <h3>Or Complete This Form</h3>
         <form >
           <div className='form__header'>
                <div className='form__item'>

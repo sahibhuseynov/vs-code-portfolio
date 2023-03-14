@@ -7,7 +7,7 @@ const Projects = () => {
     console.log(colors)
   return (
     <div className='projects'>
-        <h3>Stuff I've Built So Far</h3>
+        <h3>My Completed Works</h3>
         <div className="projects__container">
             {ProjectsData.map((project, index) => {
                 return (
