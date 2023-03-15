@@ -1,0 +1,50 @@
+@import '../../sass/index.scss';
+
+.terminal__container{
+    
+    background-color: #24292e;
+    
+    .terminal__header{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            column-gap: 25px;
+            color: gray;
+            p{
+                cursor: pointer;
+                transition: 0.2s ease;
+                &:hover{
+                    color: #fff;
+                }    
+            }
+            :last-child{
+                color: #ffff;
+                border-bottom: 2px solid #fff;
+            }
+            }
+            .right{
+                display: flex;
+                gap: 15px;
+                cursor: pointer;
+            }
+            
+        }
+
+        .terminal__body{
+            display: flex;
+            justify-content: space-between;
+
+          .left{
+            textarea{
+                font-size: 20px;
+                color:rgb(187, 186, 186) ;
+                background: transparent;
+                border: none;
+                outline: none;
+                resize: none;
+            }
+          }
+        }
+    }
+    

@@ -9,6 +9,7 @@ import About from "./pages/About/About";
 import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
 import Package from './pages/Package/Package';
+import Terminal from "./components/Terminal/Terminal";
 
 
 const Layout = () => {
@@ -22,6 +23,7 @@ const Layout = () => {
                 <Tabs />
                 <div className="outlet">
                 <Outlet/>
+                <div className='terminal' ><Terminal /></div>
                 </div>
             </div>
         </div>
