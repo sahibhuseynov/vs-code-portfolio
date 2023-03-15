@@ -34,16 +34,23 @@
         .terminal__body{
             display: flex;
             justify-content: space-between;
-
+            height: 100%;
           .left{
+            width: 100%;
             textarea{
+                width: 100%;
                 font-size: 20px;
                 color:rgb(187, 186, 186) ;
                 background: transparent;
                 border: none;
                 outline: none;
                 resize: none;
+                margin-top: 20px;
             }
+          }
+          .right{
+            width: 150px;
+            background-color: red;
           }
         }
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 import VsCodeIcon from '../../assets/vscode_icon.svg'
 const Navbar = () => {
+  
   return (
     <section className='navbar'>
      <di className='nav__left'>
@@ -12,7 +13,7 @@ const Navbar = () => {
           <p>View</p>
           <p>Go</p>
           <p>Run</p>
-          <p>Terminal</p>
+          <p >Terminal</p>
           <p>Help</p>
         </div>
      </di >

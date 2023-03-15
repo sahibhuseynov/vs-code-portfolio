@@ -33,13 +33,11 @@ const Terminal = () => {
   </div>
   <div className="terminal__body">
     <div className='left'>
-      <textarea name="" id="" cols="30" rows="10">
-      PS C:\Users\micha\Desktop\vs-code-portfolio
+      <textarea >
+      C:\Users\micha\Desktop\vs-code-portfolio&#62;
       </textarea>
     </div >
-    <div className="right">
-      
-    </div>
+    <div className="right"></div>
     </div>
 </Resizable>
     </div>
