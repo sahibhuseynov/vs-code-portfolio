@@ -21,8 +21,15 @@ display: flex;
         p{
             font-size: 14px;
         }
+        &:last-child{
+            display: none;
+        }
+        
     }
     .active{
         border-top: 1px solid red;
+        &:last-child{
+            display: flex;
+        }
     }
 }
