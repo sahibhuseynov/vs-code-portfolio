@@ -7,8 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-li{
-  list-style: none;
+::-webkit-scrollbar {
+  width: 15px; // Çubuğun genişliği
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #454647; // Çubuğun arka plan rengi
 }
 
 body{
@@ -34,4 +38,7 @@ body{
 .link{
   text-decoration: none;
   color: inherit;
+}
+li{
+  list-style: none;
 }

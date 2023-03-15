@@ -32,9 +32,9 @@ const data = [
 const Package = () => {
   return (
     <div>
-        <pre>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-        </pre>
+        
+        <pre style={{fontSize:'20px'}}>{JSON.stringify(data, null, 2)}</pre>
+        
     </div>
   )
 }
