@@ -3,7 +3,7 @@
 .navbar {
   background-color: #1f2428;
   height: 30px;
-  padding: 0 12px;
+  padding: 0 0 0 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +38,25 @@
   }
   .nav__right {
     display: flex;
+    align-items: center;
     flex: 1;
+    justify-content: end;
+
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      padding: 10px 0;
+      height: 100%;
+      cursor: pointer;
+      &:hover:last-child{
+        background: rgb(242, 6, 6);
+       }
+       &:hover{
+        background:#4f4f52;
+       }
+      }
+    }
   }
-}
+

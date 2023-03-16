@@ -1,6 +1,10 @@
 import React from 'react'
 import './Navbar.scss'
 import VsCodeIcon from '../../assets/vscode_icon.svg'
+import {AiOutlineLine} from 'react-icons/ai'
+import {FaRegWindowRestore} from 'react-icons/fa'
+import {RxCross2} from 'react-icons/rx'
+
 const Navbar = ({isTerminalOpen,setIsTerminalOpen}) => {
   
   return (
@@ -19,7 +23,9 @@ const Navbar = ({isTerminalOpen,setIsTerminalOpen}) => {
      </di >
       <p className='nav__title'>Sahib Huseynov - Visual Studio Code</p>
       <div className='nav__right'>
-
+        <span><AiOutlineLine size={17}/></span>
+        <span><FaRegWindowRestore size={12} /></span>
+        <span><RxCross2 size={17}/></span>
       </div>
     </section>
   )
