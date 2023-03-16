@@ -26,9 +26,9 @@ const Terminal = ({isTerminalOpen,setIsTerminalOpen}) => {
             <p>TERMINAL</p>
         </div>
         <div className="right">
-        <BsThreeDots size={20}/>
-        <FiChevronUp size={20}/>
-        <RxCross2 size={20} onClick={() => setIsTerminalOpen(!isTerminalOpen)}/>
+        <span><BsThreeDots size={20}/></span>
+       <span> <FiChevronUp size={20}/></span>
+        <span onClick={() => setIsTerminalOpen(!isTerminalOpen)}><RxCross2 size={20} /></span>
         </div>
    
   </div>
