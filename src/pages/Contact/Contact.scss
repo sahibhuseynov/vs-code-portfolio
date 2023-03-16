@@ -66,10 +66,14 @@
         font-weight: 600;
       }
       textarea{
+        resize: none;
         background: #1f2428;
         border: none;
+        outline: none;
+        padding: 8px 12px;
       }
     }
+    
     .form__header {
       display: flex;
       gap: 20px;

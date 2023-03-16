@@ -4,6 +4,7 @@ import { Resizable } from 're-resizable'
 import {BsThreeDots} from 'react-icons/bs'
 import { FiChevronUp} from 'react-icons/fi'
 import {RxCross2} from 'react-icons/rx'
+import powershell from '../../assets/powershell-icon.jpg'
 const Terminal = ({isTerminalOpen,setIsTerminalOpen}) => {
   return (
     <div className='terminal__container'>
@@ -11,7 +12,7 @@ const Terminal = ({isTerminalOpen,setIsTerminalOpen}) => {
   defaultSize={{
     height:200,
   }}
-  style={{ borderTop:'2px solid #ffff' , padding: '10px' }}
+  style={{ borderTop:'2px solid #696767' , padding: '10px' }}
   enable={{ top: true}}
 
 >
@@ -37,7 +38,20 @@ const Terminal = ({isTerminalOpen,setIsTerminalOpen}) => {
       C:\Users\micha\Desktop\vs-code-portfolio&#62;
       </textarea>
     </div >
-    <div className="right"></div>
+    <div className="right">
+      <span>
+        <img src={powershell} alt="" />
+        <p>powershell</p>
+      </span>
+      <span>
+        <img src={powershell} alt="" />
+        <p>powershell</p>
+      </span>
+      <span>
+        <img src={powershell} alt="" />
+        <p>powershell</p>
+      </span>
+    </div>
     </div>
 </Resizable>
     </div>
