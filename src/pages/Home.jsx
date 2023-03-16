@@ -1,19 +1,42 @@
 import React from 'react'
 import './Home.scss'
-import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom';
+import { TypeAnimation } from 'react-type-animation';import { Link } from 'react-router-dom';
+import Canvas from '../components/MuseTrail/Canvas';
+import TextTitle from './../components/TextTitle';
+
+const textTitle = 'Hi,Im Sahib,\nWeb Developer.'.split("").map((char, index) => {
+  return {
+    char: char === " " ? "\u00A0" : char,
+    key: index,
+    isComma: char === ","
+  };
+});
+
 const Home = () => {
   return (
     <div className='home'>
+       <div className='mouse__trail'><Canvas /></div > 
       <div className="home__title">
-        <motion.h1
-        initial={{ x: -200}}
-        animate={{ x: 0}}
-        transition={{ duration: 0.5, type:'spring', stiffness: 50, }}
-        >Sahib Huseynov</motion.h1>
+        
+       
+        
+        <div className='text__title'>
+            
+            
+        {textTitle.map(({ char, key, isComma }) => {
+    return (
+      <React.Fragment key={key}>
+        <TextTitle>{char}</TextTitle>
+        {isComma && <br />}
+      </React.Fragment>
+    );
+  })}
+            
+            
+        </div >
+        
         <TypeAnimation
-    sequence={['Frontend Web Developer.', ]}
+    sequence={['Front End Developer / React Expert', ]}
     speed={35} 
     wrapper="h3"
   />

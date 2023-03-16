@@ -4,19 +4,34 @@
   height: 100%;
   display: flex;
   align-items: center;
-  
+position: relative;
+overflow: hidden;
   font-family: "JetBrains Mono", monospace;
+  .mouse__trail{
+    position: absolute;
+    inset: 0;
+    z-index: -15;
+    
+  }
   .home__title {
     h1 {
-      font-size: 56px;
-      font-weight: 3.5rem;
-      margin-bottom: 8px;
+      display: inline-block;
+      font-size: 85px;
+      font-weight: 900;
+      margin:-12px 0;
+     &:nth-child(20){
+      color: red;
+     }
     }
     h3 {
+      color: #727278;
       font-size: 24px;
       margin-bottom: 48px;
+      margin-top: 12px;
     }
-
+    .text__title{
+      white-space: pre-line;
+    }
     .home__btn__group {
       display: flex;
       gap: 30px;
