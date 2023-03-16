@@ -31,7 +31,7 @@ const data = [
 ]
 const Package = () => {
   return (
-    <div>
+    <div style={{height:'100%'}}>
         
         <pre style={{fontSize:'20px'}}>{JSON.stringify(data, null, 2)}</pre>
         

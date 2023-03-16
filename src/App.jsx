@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -13,9 +14,10 @@ import Terminal from "./components/Terminal/Terminal";
 
 
 const Layout = () => {
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false)
   return (
     <>
-        <Navbar />
+        <Navbar isTerminalOpen={isTerminalOpen} setIsTerminalOpen={setIsTerminalOpen}/>
         <div className="main__content">
             <Sidebar />
             <Explorer />
@@ -23,7 +25,9 @@ const Layout = () => {
                 <Tabs />
                 <div className="outlet">
                 <Outlet/>
-                <div className='terminal' ><Terminal /></div>
+                {
+                  isTerminalOpen && <div className='terminal' ><Terminal isTerminalOpen={isTerminalOpen} setIsTerminalOpen={setIsTerminalOpen} /></div>
+                }
                 </div>
             </div>
         </div>

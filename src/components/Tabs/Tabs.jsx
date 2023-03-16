@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Tabs = () => {
   const location = useLocation();
   const {pathname} = location;
-  console.log(pathname)
+  
   return (
     <div className='tabs'>
     {explorerItems.map((item, index) => (

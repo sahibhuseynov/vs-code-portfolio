@@ -4,7 +4,7 @@ import { Resizable } from 're-resizable'
 import {BsThreeDots} from 'react-icons/bs'
 import { FiChevronUp} from 'react-icons/fi'
 import {RxCross2} from 'react-icons/rx'
-const Terminal = () => {
+const Terminal = ({isTerminalOpen,setIsTerminalOpen}) => {
   return (
     <div className='terminal__container'>
         <Resizable
@@ -27,7 +27,7 @@ const Terminal = () => {
         <div className="right">
         <BsThreeDots size={20}/>
         <FiChevronUp size={20}/>
-        <RxCross2 size={20}/>
+        <RxCross2 size={20} onClick={() => setIsTerminalOpen(!isTerminalOpen)}/>
         </div>
    
   </div>
