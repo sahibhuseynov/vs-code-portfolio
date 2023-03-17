@@ -25,7 +25,7 @@ const Home = () => {
           {textTitle.map(({ char, key, isComma }, index) => {
             return (
               <React.Fragment key={key}>
-                <TextTitle color={colors[index]}>{char}</TextTitle>
+                <TextTitle hovercolor={colors[index]}>{char}</TextTitle>
                 {isComma && <br />}
               </React.Fragment>
             );

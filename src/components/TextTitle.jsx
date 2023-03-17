@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
 
-const TextTitle = ({ children, color }) => {
+const TextTitle = ({ children, hovercolor,textcolor }) => {
   const controls = useAnimationControls();
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -20,6 +20,7 @@ const TextTitle = ({ children, color }) => {
 
   return (
     <motion.h1
+    style={{color: textcolor}}
       animate={controls}
       onMouseOver={() => {
         if (!isPlaying) {
@@ -35,7 +36,7 @@ const TextTitle = ({ children, color }) => {
         loop: 1,
         repeatDelay: 1,
       }}
-     whileHover={{color: color}}
+     whileHover={{color: hovercolor}}
     >
       {children}
     </motion.h1>

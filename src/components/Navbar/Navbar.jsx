@@ -6,7 +6,6 @@ import {FaRegWindowRestore} from 'react-icons/fa'
 import {RxCross2} from 'react-icons/rx'
 
 const Navbar = ({isTerminalOpen,setIsTerminalOpen}) => {
-  
   return (
     <section className='navbar'>
      <di className='nav__left'>
