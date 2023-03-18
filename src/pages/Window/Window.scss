@@ -1,0 +1,8 @@
+.window__screen{
+    height: 100vh;
+    img{
+        width: 100%;
+        height:calc(100vh - 40px);
+        object-fit: cover;
+    }
+}

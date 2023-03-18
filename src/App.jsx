@@ -11,12 +11,13 @@ import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
 import Package from './pages/Package/Package';
 import Terminal from "./components/Terminal/Terminal";
+import Window from './pages/Window/Window';
 
 
 const Layout = () => {
   const [isTerminalOpen, setIsTerminalOpen] = useState(false)
   return (
-    <>
+    <div className='layout'>
         <Navbar isTerminalOpen={isTerminalOpen} setIsTerminalOpen={setIsTerminalOpen}/>
         <div className="main__content">
             <Sidebar />
@@ -32,7 +33,7 @@ const Layout = () => {
             </div>
         </div>
         <Footer />
-    </>
+    </div>
   )
 }
 
@@ -47,7 +48,12 @@ const router = createBrowserRouter([
       { path: "/projects", element: <Projects /> },
       { path: "/package", element: <Package /> },
     ]
+  },
+  {
+    path: "/window",
+    element:<Window />
   }
+  
 ]);
  
 

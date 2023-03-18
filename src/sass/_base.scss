@@ -17,9 +17,11 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
+  
+}
+.layout{
   color: white;
 }
-
 .main__content{
   display: flex;
   height:calc(100vh - 60px);
