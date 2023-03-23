@@ -1,9 +1,8 @@
 import React from 'react'
 import './BottomBar.scss'
-import windowsIcon2 from '../../../assets/windows/windows-logo-icon2.svg'
 import windowsIcon from '../../../assets/windows/windows-10-white-icon-10.jpg'
 import vsCodeIcon from '../../../assets/vscode_icon.svg'
-import {BsWindows} from 'react-icons/bs'
+
 import {VscSearch} from 'react-icons/vsc'
 import { Link } from 'react-router-dom';
 const BottomBar = () => {
@@ -24,7 +23,11 @@ const BottomBar = () => {
                         <img src={vsCodeIcon} alt="" />
                     </span>
                 </Link >
+                
             </div>
+        </div>
+        <div className='bottom__bar__right'>
+
         </div>
     </div>
   )

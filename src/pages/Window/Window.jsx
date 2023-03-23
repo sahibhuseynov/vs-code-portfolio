@@ -1,12 +1,11 @@
 import React from 'react'
 import './Window.scss'
 import BottomBar from '../../components/Window/BottomBar/BottomBar'
-import Windows from '../../assets/windows/windows-screen-image.webp'
 
 const Window = () => {
   return (
     <div className='window__screen'>
-        <img src={Windows} alt="" />
+        <img src='https://wallpapercave.com/wp/wp5493583.jpg' alt="" />
         <BottomBar />
     </div>
   )

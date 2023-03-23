@@ -41,6 +41,8 @@
             }
         }
         .icons__bar{
+            display: flex;
+            gap: 8px;
             span{
                 width: 50px;
                 height: 100%;
@@ -48,6 +50,9 @@
                 justify-content: center;
                 align-items: center;
                 border-bottom: 2px solid rgb(98, 232, 241);
+                &:hover{
+                    background-color: #404040;
+                }
                 img{
                     width: 25px;
                     height: 25px;
@@ -55,6 +60,7 @@
                     
                 }
             }
+            
         }
     }
 }
