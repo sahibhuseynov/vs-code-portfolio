@@ -2,6 +2,7 @@ import React from 'react'
 import './About.scss'
 import TextTitle from './../../components/TextTitle';
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 const textTitle = 'My, Myself & I'.split("")
  
 const About = () => {
@@ -23,9 +24,21 @@ const About = () => {
             })}
           </div>
           <div className='about__title'>
-            <p>I'm a Front-End Developer located in Azerbaijan. I enjoy designing user experiences and creating creative solutions.</p>
-            <p>I'm a detail-oriented, problem-solving, hard-working student. My hobbies include playing chess and exploring new places.</p>
-            <p>I'm interested in frontend technologies and aim to work on innovative projects with positive people. Working with such people motivates me and I strive to continuously improve myself.</p>
+            <motion.p
+            initial={{x:-850}}
+            animate={{x:0}}
+            transition={{ duration: 0.7, }}
+            >I'm a Front-End Developer located in Azerbaijan. I enjoy designing user experiences and creating creative solutions.</motion.p>
+            <motion.p
+            initial={{x:-950}}
+            animate={{x:0}}
+            transition={{ duration: 0.7 , delay:0.3 }}
+            >I'm a detail-oriented, problem-solving, hard-working student. My hobbies include playing chess and exploring new places.</motion.p>
+            <motion.p
+            initial={{x:-1150}}
+            animate={{x:0}}
+            transition={{ duration: 0.7 , delay:0.5 }}
+            >I'm interested in frontend technologies and aim to work on innovative projects with positive people. Working with such people motivates me and I strive to continuously improve myself.</motion.p>
           </div>
       </div >
       <div className="about__right">
