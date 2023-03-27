@@ -2,9 +2,9 @@ import React from 'react';
 import './Home.scss';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
-import Canvas from '../components/MuseTrail/Canvas';
 import TextTitle from './../components/TextTitle';
 import randomcolor from 'randomcolor';
+import '../components/hoverthree'
 
 const textTitle = 'Hi,Im Sahib,\nWeb Developer.'.split("").map((char, index) => {
   return {
@@ -19,7 +19,7 @@ const colors = randomcolor({ count: textTitle.length, luminosity: 'bright',satur
 const Home = () => {
   return (
     <div className='home'>
-      <div className='mouse__trail'><Canvas /></div> 
+     <canvas id='canvas'></canvas>
       <div className="home__title">
         <div className='text__title'>
           {textTitle.map(({ char, key, isComma }, index) => {
