@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,lazy,Suspense } from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -6,12 +6,13 @@ import Explorer from './components/Explorer/Explorer';
 import Footer from './components/Footer/Footer';
 import Tabs from "./components/Tabs/Tabs";
 import Home from './pages/Home';
-import About from "./pages/About/About";
-import Contact from './pages/Contact/Contact';
-import Projects from './pages/Projects/Projects';
-import Package from './pages/Package/Package';
 import Terminal from "./components/Terminal/Terminal";
-import Window from './pages/Window/Window';
+const About = React.lazy(() => import('./pages/About/About'));
+const Contact = React.lazy(() => import('./pages/Contact/Contact'));
+const Projects = React.lazy(() => import('./pages/Projects/Projects'));
+const Package = React.lazy(() => import('./pages/Package/Package'));
+const Window = React.lazy(() => import('./pages/Window/Window'));
+
 
 
 const Layout = () => {
@@ -25,11 +26,14 @@ const Layout = () => {
             <div className="page__control">
                 <Tabs />
                 <div className="outlet">
-                <Outlet/>
-                {
-                  isTerminalOpen && <div className='terminal' ><Terminal isTerminalOpen={isTerminalOpen} setIsTerminalOpen={setIsTerminalOpen} /></div>
-                }
-                </div>
+                <Suspense fallback={<div>...</div>}>
+                  <Outlet/>
+                  {
+                    isTerminalOpen && <div className='terminal' ><Terminal isTerminalOpen={isTerminalOpen} setIsTerminalOpen={setIsTerminalOpen} /></div>
+                  }
+                   </Suspense>
+                  </div>
+               
             </div>
         </div>
         <Footer />
@@ -51,7 +55,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/window",
-    element:<Window />
+    element:(
+      <Suspense fallback={<div>...</div>}>
+        <Window />
+      </Suspense>
+    )
   }
   
 ]);
