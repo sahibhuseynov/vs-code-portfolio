@@ -73,8 +73,8 @@
 
             init: function (options) {
 
-                this.spring = options.spring + (Math.random() * 0.1) - 0.03;
-                this.friction = settings.friction + (Math.random() * 0.01) - 0.002;
+                this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
                 this.nodes = [];
 
                 for (var i = 0, node; i < settings.size; i++) {
