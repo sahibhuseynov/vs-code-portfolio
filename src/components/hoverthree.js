@@ -11,7 +11,7 @@
 
     settings.debug = true;
     settings.friction = 0.5;
-    settings.trails = 20;
+    settings.trails = 25;
     settings.size = 50;
     settings.dampening = 0.25;
     settings.tension = 0.98;
@@ -73,8 +73,8 @@
 
             init: function (options) {
 
-                this.spring = options.spring + (Math.random() * 0.1) - 0.05;
-                this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                this.spring = options.spring + (Math.random() * 0.1) - 0.03;
+                this.friction = settings.friction + (Math.random() * 0.01) - 0.002;
                 this.nodes = [];
 
                 for (var i = 0, node; i < settings.size; i++) {
@@ -185,7 +185,7 @@
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         ctx.globalCompositeOperation = 'lighter';
         ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
-        ctx.lineWidth = 3;
+        ctx.lineWidth = 2;
 
         if (ctx.frame % 60 == 0) {
             console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
